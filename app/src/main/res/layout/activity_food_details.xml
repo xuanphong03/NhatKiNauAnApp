@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FoodDetails"
+        android:background="@drawable/bgcreate">
+
+    <Button
+            android:id="@+id/btnUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#3F51B5"
+            android:text="Cập nhật"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardViewItem"
+            app:layout_constraintVertical_bias="0.36" />
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:backgroundTint="#FF9800"
+            android:text="Quay lại"
+            app:layout_constraintBottom_toBottomOf="@+id/btnUpdate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btnUpdate" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="54dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:backgroundTint="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="vertical">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <TextView
+                    android:id="@+id/tvLabelFoodName"
+                    android:layout_width="100dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="24dp"
+                    android:background="#FF6E40"
+                    android:text="TÊN MÓN:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tvFoodName"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:text=""
+                    android:textSize="18dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/tvLabelFoodName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.059"
+                    app:layout_constraintStart_toEndOf="@+id/tvLabelFoodName"
+                    app:layout_constraintTop_toTopOf="@+id/tvLabelFoodName"
+                    app:layout_constraintVertical_bias="1.0" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLabelFoodRecipe"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#FFFF6E40"
+                    android:gravity="center"
+                    android:lineHeight="24dp"
+                    android:text="CÁC BƯỚC CHẾ BIẾN:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.05"
+                    app:layout_constraintStart_toEndOf="@+id/tvLabelFoodRecipe"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvFoodRecipe"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text=""
+                        android:textSize="18dp" />
+                </ScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/tvLabelFoodRating"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:background="#FFFF6E40"
+                    android:text="ĐÁNH GIÁ:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/rtFoodRating"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/rtFoodRating" />
+
+                <RatingBar
+                    android:id="@+id/rtFoodRating"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:numStars="5"
+                    android:progressTint="#FFEB3B"
+                    android:textSize="18dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvLabelFoodRating"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvFoodImageLabel"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#FFFF6E40"
+                    android:gravity="center"
+                    android:text="ẢNH:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/imFoodImage"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginBottom="16dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.106"
+                    app:layout_constraintStart_toEndOf="@+id/tvFoodImageLabel"
+                    app:layout_constraintTop_toTopOf="@+id/tvFoodImageLabel"
+                    app:srcCompat="@android:drawable/ic_menu_gallery" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/tvLabelFoodSecret"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="16dp"
+                    android:background="#FFFF6E40"
+                    android:gravity="center"
+                    android:text="BÍ QUYẾT:"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@+id/tvLabelFoodSecret"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/tvFoodSecret"
+                        android:layout_width="240dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:text=""
+                        android:textSize="18dp" />
+                </ScrollView>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+            android:id="@+id/btnDelete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CC0E0E"
+            android:text="Xóa"
+            app:layout_constraintBottom_toBottomOf="@+id/btnUpdate"
+            app:layout_constraintEnd_toStartOf="@+id/btnBack"
+            app:layout_constraintHorizontal_bias="0.554"
+            app:layout_constraintStart_toEndOf="@+id/btnUpdate"
+            app:layout_constraintTop_toTopOf="@+id/btnUpdate" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="16dp"
+        android:clickable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@android:drawable/stat_notify_chat" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

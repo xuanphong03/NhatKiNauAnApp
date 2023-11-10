@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="#FFFFFF">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvlabel_foodName"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="TÊN MÓN"
+            android:gravity="center"
+            android:background="#2EE636"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etFoodName"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:hint="Nhập tên món ăn"
+            android:inputType="text"
+            android:paddingLeft="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvlabel_foodName"
+            app:layout_constraintTop_toTopOf="@+id/tvlabel_foodName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvlabel_recipe"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:text="CÁC BƯỚC CHẾ BIẾN"
+            android:gravity="center"
+            android:background="#2EE636"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvlabel_recipe"
+            app:layout_constraintTop_toTopOf="@+id/tvlabel_recipe"
+            app:layout_constraintVertical_bias="0.0">
+
+            <EditText
+                android:id="@+id/etFoodRecipe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:paddingLeft="12dp"
+                android:hint="Nhập các bước chế biến" />
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:id="@+id/tvlabel_foodSecret"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:background="#2EE636"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="BÍ QUYẾT NẤU ĂN"
+            android:textStyle="bold"
+            android:gravity="center"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ScrollView
+            android:layout_width="250dp"
+            android:layout_height="110dp"
+            android:layout_marginEnd="4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/tvlabel_foodSecret"
+            app:layout_constraintTop_toTopOf="@+id/tvlabel_foodSecret"
+            app:layout_constraintVertical_bias="0.0">
+
+            <EditText
+                android:id="@+id/etFoodSecret"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:paddingLeft="12dp"
+                android:hint="Nhập bí quyết nấu ăn" />
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/tvFoodRatingLabel"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:text="ĐÁNH GIÁ"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:background="#2EE636"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RatingBar
+            android:id="@+id/rtFoodRatingUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:progressTint="#FFEB3B"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.097"
+            android:scaleX="0.8"
+            android:scaleY="0.8"
+            app:layout_constraintStart_toEndOf="@+id/tvFoodRatingLabel"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <ImageView
+        android:id="@+id/imFoodImgUpdate"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <Button
+        android:id="@+id/btnChooseNewImg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Chọn ảnh mới" />
+
+    <Button
+        android:id="@+id/btnUpdateData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Cập nhật dữ liệu"
+        android:backgroundTint="#00EC03"/>
+
+
+</LinearLayout>

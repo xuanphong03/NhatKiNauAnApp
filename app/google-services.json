@@ -1,0 +1,106 @@
+{
+  "project_info": {
+    "project_number": "707003044903",
+    "firebase_url": "https://nhatkinauan-eb89c-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "nhatkinauan-eb89c",
+    "storage_bucket": "nhatkinauan-eb89c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707003044903:android:9242718da1c0b59103aa02",
+        "android_client_info": {
+          "package_name": "com.example.app_nhatkinauan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIx1vi908PHds6qymNQ3qdX19Za86uuvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707003044903:android:4366e6d9f7a84e2603aa02",
+        "android_client_info": {
+          "package_name": "com.example.nhat_ki_nau_an"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIx1vi908PHds6qymNQ3qdX19Za86uuvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707003044903:android:5ec6bdadd4bf5d3c03aa02",
+        "android_client_info": {
+          "package_name": "com.example.nhatkinauan"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIx1vi908PHds6qymNQ3qdX19Za86uuvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707003044903:android:46016dba10c70e4d03aa02",
+        "android_client_info": {
+          "package_name": "com.example.nhatkinauanapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIx1vi908PHds6qymNQ3qdX19Za86uuvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:707003044903:android:0498df1ca47484e003aa02",
+        "android_client_info": {
+          "package_name": "com.mkrdeveloper.firebaserealtimeexample"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIx1vi908PHds6qymNQ3qdX19Za86uuvM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
